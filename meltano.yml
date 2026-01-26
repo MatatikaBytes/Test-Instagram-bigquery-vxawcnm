@@ -12,8 +12,6 @@ plugins:
     pip_url: git+https://github.com/Matatika/tap-instagram.git@v0.2.0
     select:
     - users.*
-    - user_insights_followers.*
-    - default_user_insights_daily.*
     - user_insights_lifetime.*
   loaders:
   - name: target-bigquery
