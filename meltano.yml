@@ -14,6 +14,7 @@ plugins:
     - users.*
     - user_insights_followers.*
     - default_user_insights_daily.*
+    - user_insights_lifetime.*
   loaders:
   - name: target-bigquery
     variant: matatika
