@@ -10,6 +10,10 @@ plugins:
   - name: tap-instagram-systemtoken
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-instagram.git@v0.2.0
+    select:
+    - users.*
+    - user_insights_followers.*
+    - default_user_insights_daily.*
   loaders:
   - name: target-bigquery
     variant: matatika
