@@ -13,6 +13,7 @@ plugins:
     select:
     - users.*
     - user_insights_lifetime.*
+    - default_user_insights_daily.*
   loaders:
   - name: target-bigquery
     variant: matatika
