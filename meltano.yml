@@ -6,6 +6,10 @@ environments:
 - name: staging
 - name: prod
 plugins:
+  extractors:
+  - name: tap-instagram-systemtoken
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-instagram.git@v0.2.0
   loaders:
   - name: target-bigquery
     variant: matatika
