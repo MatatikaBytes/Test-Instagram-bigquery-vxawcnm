@@ -9,11 +9,7 @@ plugins:
   extractors:
   - name: tap-instagram-systemtoken
     variant: matatika
-    pip_url: git+https://github.com/Matatika/tap-instagram.git@issue/incorrect_timestamp_format_in_user_insights_stream
-    select:
-    - users.*
-    - user_insights_lifetime.*
-    - default_user_insights_daily.*
+    pip_url: git+https://github.com/Matatika/tap-instagram.git@v0.5.2
   loaders:
   - name: target-bigquery
     variant: matatika
